@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+        
+    <wb-module deploy-name="AppTontaPatEAR-1.0.0">
+                
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/ear-resources"/>
+                
+        <wb-resource deploy-path="/" source-path="/src/main/application" tag="defaultRootSource"/>
+        <dependent-module archiveName="AppTontaPatEntity-1.0.0.jar" deploy-path="/lib" handle="module:/resource/AppTontaPatEntity/AppTontaPatEntity">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AppTontaPatIDao-1.0.0.jar" deploy-path="/lib" handle="module:/resource/AppTontaPatIDao/AppTontaPatIDao">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AppTontaPatDao-1.0.0.jar" deploy-path="/" handle="module:/resource/AppTontaPatDao/AppTontaPatDao">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mysql-connector-java-8.0.11.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/mysql/mysql-connector-java/8.0.11/mysql-connector-java-8.0.11.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="protobuf-java-2.6.0.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/com/google/protobuf/protobuf-java/2.6.0/protobuf-java-2.6.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AppTontaPatIBusiness-1.0.0.jar" deploy-path="/lib" handle="module:/resource/AppTontaPatIBusiness/AppTontaPatIBusiness">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AppTontaPatBusiness-1.0.0.jar" deploy-path="/" handle="module:/resource/AppTontaPatBusiness/AppTontaPatBusiness">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="AppTontaPatWeb-1.0.0.war" deploy-path="/" handle="module:/resource/AppTontaPatWeb/AppTontaPatWeb">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+            
+    </wb-module>
+    
+</project-modules>

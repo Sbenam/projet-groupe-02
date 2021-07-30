@@ -1,0 +1,40 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+             version="2.1">
+    <persistence-unit name="AppTontaPat" transaction-type="JTA">
+    <jta-data-source>java:jboss/datasources/tontapat_db</jta-data-source>
+    	<class>fr.eql.ai109.apptontapat.entity.Service</class>
+    	<class>fr.eql.ai109.apptontapat.entity.Rupture</class>
+    	<class>fr.eql.ai109.apptontapat.entity.Clocking</class>
+    	<class>fr.eql.ai109.apptontapat.entity.Incident</class>
+    	<class>fr.eql.ai109.apptontapat.entity.Datum</class>
+    	<class>fr.eql.ai109.apptontapat.entity.Refusal</class>
+    	<class>fr.eql.ai109.apptontapat.entity.Account</class>
+    	<class>fr.eql.ai109.apptontapat.entity.Role</class>
+    	<class>fr.eql.ai109.apptontapat.entity.ZipCode</class>
+    	<class>fr.eql.ai109.apptontapat.entity.Desactivation</class>
+    	<class>fr.eql.ai109.apptontapat.entity.EvacuateA</class>
+    	<class>fr.eql.ai109.apptontapat.entity.Herd</class>
+    	<class>fr.eql.ai109.apptontapat.entity.Race</class>
+    	<class>fr.eql.ai109.apptontapat.entity.TakeOut</class>
+    	<class>fr.eql.ai109.apptontapat.entity.Specie</class>
+    	<class>fr.eql.ai109.apptontapat.entity.Field</class>
+    	<class>fr.eql.ai109.apptontapat.entity.Composition</class>
+    	<class>fr.eql.ai109.apptontapat.entity.Enclosure</class>
+    	<class>fr.eql.ai109.apptontapat.entity.GlassHeight</class>
+    	<class>fr.eql.ai109.apptontapat.entity.Slope</class>
+    	<class>fr.eql.ai109.apptontapat.entity.Water</class>
+    	<class>fr.eql.ai109.apptontapat.entity.Shelter</class>
+    	<class>fr.eql.ai109.apptontapat.entity.Vegetation</class>
+    	<class>fr.eql.ai109.apptontapat.entity.Retret</class>
+    	<class>fr.eql.ai109.apptontapat.entity.Humidity</class>
+        <properties>
+            <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+            <property name="hibernate.show_sql" value="true" />
+           <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+        </properties>
+    </persistence-unit>
+
+</persistence>
